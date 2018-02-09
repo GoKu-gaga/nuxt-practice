@@ -17,6 +17,9 @@ module.exports = {
   ** Customize the progress bar color
   */
   loading: { color: '#3B8070' },
+  css: [
+    '@/assets/sass/global.scss'
+  ],
   /*
   ** Build configuration
   */
@@ -34,5 +37,11 @@ module.exports = {
         })
       }
     }
-  }
+  },
+  vendor: [
+    'particles.js'
+  ],
+  plugins: [
+    {src: '@/plugins/particles.js', ssr: false}
+  ]
 }
